@@ -59,3 +59,41 @@
   margin-left: 0px;
   padding: 0 15px;
 }
+.modal {
+  left: 50%;
+  bottom: auto;
+}
+.modal-dialog {
+  width: auto;
+}
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.5;
+}
+.nav-tabs.nav-justified {
+  width: 80%;
+}
+.nav-tabs {
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+}
+.nav-tabs > li {
+  border-left: none;
+}
+.nav-tabs.nav-justified > li {
+  width: 30%;
+  float: left;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: #f0bf00 !important;
+}
+.panel {
+  box-shadow: none;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}

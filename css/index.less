@@ -1,4 +1,5 @@
-
+@yellow : #f0bf00; 
+//轮播图
 #headerwrap {
     margin-top: 0;
     padding-top: 0px;
@@ -35,6 +36,7 @@
     }
     
 }
+//轮播图下面的黄色部分
 #feature{
     height: 100%;
     background-size: 100% 100%;
@@ -43,15 +45,19 @@
         margin-bottom: 60px;
     }
 }
+//修改row的padding
 .container, .container-fluid{
     padding-left: 0px;
 }
+//顶部导航栏
 .collapse{
     display: block;
 }
+//按钮
 .btn{
     height: auto;
 }
+//底部的联系我们
 #theme-form input[type=submit]{
     margin-top: 10px;
 }
@@ -59,4 +65,41 @@
     margin-right: 0px;
     margin-left: 0px;
     padding: 0 15px;
+}
+//登录的弹出框
+.modal{
+    left: 50%;
+    bottom: auto;
+}
+.modal-dialog{
+    width: auto;
+}
+.modal-backdrop, .modal-backdrop.fade.in{
+    opacity: 0.5;
+}
+.nav-tabs.nav-justified{
+    width: 80%;
+}
+.nav-tabs{
+    background-color:#FFFFFF;
+    color: #FFFFFF;
+}
+.nav-tabs>li{
+    border-left: none;
+ 
+}
+.nav-tabs.nav-justified>li{
+    width: 30%;
+    float: left;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color:@yellow!important;
+}
+.panel{
+    box-shadow: none;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
