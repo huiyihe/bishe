@@ -1,9 +1,9 @@
- $(document).on('click.collapse.data-api', '[data-toggle=collapse]', function (e) {
-    var $this = $(this), href
-      , target = $this.attr('data-target')
-        || e.preventDefault()
-        || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') //strip for ie7
-      , option = $(target).data('collapse') ? 'toggle' : $this.data()
-    $this[$(target).hasClass('in') ? 'addClass' : 'removeClass']('collapsed')
-    $(target).collapse(option)
-  })
+ 
+   $("#Pagination").extendPagination({
+		totalCount: 10,//一共有多少条数据           
+        limit: '5',//每页多少条数据
+        current : 1,
+        callback: function (err,current) {
+    		
+    	}
+});

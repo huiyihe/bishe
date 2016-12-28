@@ -103,3 +103,96 @@
     top: 10px;
     right: 20px;
 }
+.aritical_less{
+    &>h2{
+        width:100%;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        -o-text-overflow:ellipsis;  
+    }
+}
+//点击活动进入详情页面
+#more_activity{
+    & section.single-page{
+        padding: 8em 0;
+    }
+    & .span8{
+        padding-right: 30px;
+    }
+    //  活动详情
+    & .date-1 {
+        float: left;
+        border-right: 1px solid #7f7f7f;
+        line-height: 18px;
+        padding-right: 8px;
+        font-size: 12px;
+    }
+    & .name-author {
+        float: left;
+        line-height: 18px;
+        padding-left: 8px;
+        font-size: 12px;
+        
+        &>a{
+            color: #000000;
+        }
+    }
+    & .comments {
+        float: right;
+        line-height: 18px;
+        text-decoration: none;
+        font-size: 12px;
+        color: #000000;
+    }
+    & .clear {
+        clear: both;
+        line-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        height: 0;
+        width: 100%;
+    }
+    & article .aritical_text{
+        margin: 18px 0px 24px;
+        & input{
+            width: 20%;
+        }
+    }
+    & .club_msg{
+        text-align: center;
+        .row{
+            margin: 0;
+            
+        }
+    } 
+}
+#Pagination{
+    text-align: right;
+    padding: 20px 10px 20px 0px;
+    & a{
+        margin-top: 0px;
+        height: 30px;
+        line-height: 30px;
+        width: auto;
+        padding: 0 10px;
+        margin-left: 10px;
+    }
+    &>span>span{
+        margin-left: 10px;
+    }
+    & input{
+        width: 10%;
+        height: 30px;
+        margin-bottom: 0;
+        margin-left: 10px
+    }
+  
+}
+.image{
+    width: 100%;
+    text-align: center;
+    &>img{
+        width: 100%;
+    }
+}
