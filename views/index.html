@@ -14,7 +14,10 @@
 		<link rel='stylesheet' id='prettyphoto-css' href="css/prettyPhoto.css" type='text/css' media='all'>
 		<link href="css/fontello.css" type="text/css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/site.min.css" />
-
+		<!--文件上传-->
+        <link rel="stylesheet" href="dist/css/dropify.min.css">
+        <!--文件上传-->
+        
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<!--[if lt IE 7]>
             <link href="css/fontello-ie7.css" type="text/css" rel="stylesheet">  
@@ -44,6 +47,7 @@
 		<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
 		<!-- Load LocalScroll -->
 		<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+		<script src="js/extendPagination.js" type="text/javascript" charset="utf-8"></script>
 		<!-- prettyPhoto Initialization -->
 		<!--<script type="text/javascript" charset="utf-8">
           $(document).ready(function(){
@@ -95,13 +99,13 @@
 						<nav class="pull-right nav-collapse collapse">
 							<ul id="menu-main" class="nav">
 								<li>
-									<a title="portfolio" href="#/contentlist">Portfolio</a>
+									<a title="portfolio" href="#/contentlist">首页</a>
 								</li>
 								<li>
-									<a title="services" href="#services">Services</a>
+									<a title="services" href="#/more_activity">更多活动</a>
 								</li>
 								<li>
-									<a title="news" href="#news">News</a>
+									<a title="news" href="#/editor">发布活动</a>
 								</li>
 								<li>
 									<a title="team" href="#team">Team</a>
@@ -113,7 +117,7 @@
 									<a title="login" href="#" data-toggle="modal" data-target="#myModal">login</a>
 								</li>
 								<li>
-									<a title="contact" href="#"><span class="glyphicon glyphicon-user"></span></a>
+									<a title="contact" href="#/personal"><span class="glyphicon glyphicon-user"></span></a>
 									
 								</li>
 								
@@ -128,7 +132,7 @@
 		</div>
 		<!-- /.navbar-wrapper -->
 		<div id="top"></div>
-		<div  id="container" style="background-color: #0044CC;height: 100px;">
+		<div  id="container" >
 		</div>
 
 		<section id="contact" class="single-page scrollblock">
@@ -186,11 +190,21 @@
 
 		
 	</body>
+	<!--首页-->
 	<link rel="import" href="./common/nav.html">
 	<link rel="import" href="./common/contentlist.html">
-		<script type="text/javascript" src="js/bootstrap.js"></script>
-		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-		<script src="js/ejs.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/router.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/router.js" type="text/javascript" charset="utf-8"></script>
+	<!--更多活动-->
+	<link rel="import" href="./more_activity/more_activity.html">
+	<!--活动详情-->
+	<link rel="import" href="./activity_detail/activity_detail.html">
+	<!--个人中心-->
+	<link rel="import" href="./personal/personal.html">
+	<!--发布活动编辑页面-->
+	<link rel="import" href="./editor/editor.html">
+	<script src="dist/js/dropify.js"></script>
+	<!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
+	<!--<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>-->
+	<!--<script src="js/ejs.min.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="js/router.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/router.js" type="text/javascript" charset="utf-8"></script>
 </html>
