@@ -14,7 +14,10 @@
 		<link rel='stylesheet' id='prettyphoto-css' href="css/prettyPhoto.css" type='text/css' media='all'>
 		<link href="css/fontello.css" type="text/css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/site.min.css" />
-
+		<!--文件上传-->
+        <link rel="stylesheet" href="dist/css/dropify.min.css">
+        <!--文件上传-->
+        
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<!--[if lt IE 7]>
             <link href="css/fontello-ie7.css" type="text/css" rel="stylesheet">  
@@ -44,12 +47,14 @@
 		<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
 		<!-- Load LocalScroll -->
 		<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+		<script src="js/extendPagination.js" type="text/javascript" charset="utf-8"></script>
 		<!-- prettyPhoto Initialization -->
 		<!--<script type="text/javascript" charset="utf-8">
           $(document).ready(function(){
             $("a[rel^='prettyPhoto']").prettyPhoto();
           });
         </script>-->
+        
 	</head>
 
 	<body>
@@ -94,13 +99,13 @@
 						<nav class="pull-right nav-collapse collapse">
 							<ul id="menu-main" class="nav">
 								<li>
-									<a title="portfolio" href="#portfolio">Portfolio</a>
+									<a title="portfolio" href="#/contentlist">首页</a>
 								</li>
 								<li>
-									<a title="services" href="#services">Services</a>
+									<a title="services" href="#/more_activity">更多活动</a>
 								</li>
 								<li>
-									<a title="news" href="#news">News</a>
+									<a title="news" href="#/editor">发布活动</a>
 								</li>
 								<li>
 									<a title="team" href="#team">Team</a>
@@ -112,7 +117,7 @@
 									<a title="login" href="#" data-toggle="modal" data-target="#myModal">login</a>
 								</li>
 								<li>
-									<a title="contact" href="#"><span class="glyphicon glyphicon-user"></span></a>
+									<a title="contact" href="#/personal"><span class="glyphicon glyphicon-user"></span></a>
 									
 								</li>
 								
@@ -127,7 +132,83 @@
 		</div>
 		<!-- /.navbar-wrapper -->
 		<div id="top"></div>
-		<!-- ******************** HeaderWrap ********************-->
+		<div  id="container" >
+		</div>
+
+		<section id="contact" class="single-page scrollblock">
+			<div class="container">
+				<div class="align"><i class="icon-mail-2"></i></div>
+				<h1>Contact us now!</h1>
+				<div class="row foot_form">
+					<div class="span12">
+						<div class="cform" id="theme-form">
+							<form action="#" method="post" class="cform-form">
+								<div class="row">
+									<div class="span6"> <span class="your-name">
+                    <input type="text" name="your-name" placeholder="Your Name" class="cform-text" size="40" title="your name">
+                    </span> </div>
+									<div class="span6"> <span class="your-email">
+                    <input type="text" name="your-email" placeholder="Your Email" class="cform-text" size="40" title="your email">
+                    </span> </div>
+								</div>
+								<div class="row">
+									<div class="span6"> <span class="company">
+                    <input type="text" name="company" placeholder="Your Company" class="cform-text" size="40" title="company">
+                    </span> </div>
+									<div class="span6"> <span class="website">
+                    <input type="text" name="website" placeholder="Your Website" class="cform-text" size="40" title="website">
+                    </span> </div>
+								</div>
+								<div class="row">
+									<div class="span12"> <span class="message">
+                    <textarea name="message" class="cform-textarea" cols="40" rows="10" title="drop us a line."></textarea>
+                    </span> </div>
+								</div>
+								<div>
+									<input type="submit" value="Send message" class="cform-submit pull-left">
+								</div>
+								<div class="cform-response-output"></div>
+							</form>
+						</div>
+					</div>
+					<!-- ./span12 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<hr>
+		<div class="footer-wrapper">
+			<div class="container">
+				<footer>
+					<small>&copy; 2013 Inbetwin Network. All rights reserved.</small>
+				</footer>
+			</div>
+			<!-- ./container -->
+		</div>
+		<!-- Loading the javaScript at the end of the page -->
+
+		
+	</body>
+	<!--首页-->
+	<script type="text/html" id="tpl_nav">
+<ul class="list-group">
+	<li class="list-group-item">
+		<a href="#/contentlist"><i class="glyphicon glyphicon-list"></i>数字素材 </a>
+	</li>
+	<li class="list-group-item">
+		<a href="#/user"><i class="glyphicon glyphicon-user"></i>员工管理 </a>
+	</li>
+	<li class="list-group-item">
+		<a href="index.html"><i class="glyphicon glyphicon-home"></i>客户管理 </a>
+	</li>
+	<li class="list-group-item">
+		<a href="index.html"><i class="glyphicon glyphicon-home"></i>系统设置 </a>
+	</li>	
+</ul>
+</script>
+	<script type="text/html" id="tpl_contentlist">
+<!-- ******************** HeaderWrap ********************-->
 		<div id="headerwrap">
 
 			<!--轮播图-->
@@ -399,74 +480,200 @@
 			<!-- /.container -->
 		</section>
 		<hr>
-
-		<section id="contact" class="single-page scrollblock">
-			<div class="container">
-				<div class="align"><i class="icon-mail-2"></i></div>
-				<h1>Contact us now!</h1>
-				<div class="row foot_form">
-					<div class="span12">
-						<div class="cform" id="theme-form">
-							<form action="#" method="post" class="cform-form">
-								<div class="row">
-									<div class="span6"> <span class="your-name">
-                    <input type="text" name="your-name" placeholder="Your Name" class="cform-text" size="40" title="your name">
-                    </span> </div>
-									<div class="span6"> <span class="your-email">
-                    <input type="text" name="your-email" placeholder="Your Email" class="cform-text" size="40" title="your email">
-                    </span> </div>
-								</div>
-								<div class="row">
-									<div class="span6"> <span class="company">
-                    <input type="text" name="company" placeholder="Your Company" class="cform-text" size="40" title="company">
-                    </span> </div>
-									<div class="span6"> <span class="website">
-                    <input type="text" name="website" placeholder="Your Website" class="cform-text" size="40" title="website">
-                    </span> </div>
-								</div>
-								<div class="row">
-									<div class="span12"> <span class="message">
-                    <textarea name="message" class="cform-textarea" cols="40" rows="10" title="drop us a line."></textarea>
-                    </span> </div>
-								</div>
-								<div>
-									<input type="submit" value="Send message" class="cform-submit pull-left">
-								</div>
-								<div class="cform-response-output"></div>
-							</form>
+</script>
+	<!--更多活动-->
+	<script type="text/html" id="tpl_more_activity">
+<div id="more_activity">
+	<section id="news" class="single-page scrollblock">
+		<div class="container">
+			<div class="align"><i class="icon-pencil-circled"></i></div>
+			<h1>Our Blog</h1>
+			<!-- Three columns -->
+			<div class="row">
+				<article class="span4 post"> <img class="img-news" src="img/blog_img-01.jpg" alt="">
+					<div class="inside aritical_less">
+						<p class="post-date"><i class="icon-calendar"></i> March 17, 2013</p>
+						<h2>A girl running on a road</h2>
+						<div class="entry-content">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. …</p>
+							<a href="#/activity_detail" class="more-link">read more</a>
 						</div>
 					</div>
-					<!-- ./span12 -->
-				</div>
-				<!-- /.row -->
+					<!-- /.inside -->
+				</article>
+				<!-- /.span4 -->
+				<article class="span4 post"> <img class="img-news" src="img/blog_img-02.jpg" alt="">
+					<div class="inside aritical_less">
+						<p class="post-date">February 28, 2013</p>
+						<h2>A bear sleeping on a tree</h2>
+						<div class="entry-content">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. …</p>
+							<a href="#" class="more-link">read more</a>
+						</div>
+					</div>
+					<!-- /.inside -->
+				</article>
+				<!-- /.span4 -->
+				<article class="span4 post"> <img class="img-news" src="img/blog_img-03.jpg" alt="">
+					<div class="inside aritical_less">
+						<p class="post-date">February 06, 2013</p>
+						<h2>A Panda playing with his baby</h2>
+						<div class="entry-content">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. …</p>
+							<a href="#" class="more-link">read more</a>
+						</div>
+					</div>
+					<!-- /.inside -->
+				</article>
+				<!-- /.span4 -->
 			</div>
-			<!-- /.container -->
-		</section>
-		<hr>
-		<div class="footer-wrapper">
-			<div class="container">
-				<footer>
-					<small>&copy; 2013 Inbetwin Network. All rights reserved.</small>
-				</footer>
-			</div>
-			<!-- ./container -->
+			<!-- /.row -->
+			<div id="Pagination">       	
+            </div>
 		</div>
-		<!-- Loading the javaScript at the end of the page -->
+		<!-- /.container -->
+	</section>
+		
+			
+</div>
 
-		<script type="text/javascript" src="js/bootstrap.js"></script>
-		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+</script>
+	<!--活动详情-->
+	<script type="text/html" id="tpl_activity_detail">
+<div class="container activity_detail">
+		        <div class="row">
+		        <article class="span8">
+		         
+		          <h2>A girl running on a road</h2>
+		        <div class="image">
+		        	<img class="img-news" src="img/blog_img-01.jpg" alt="">	
+		        </div>
+		        
+				<div class="inside aritical_text">
+			
+					<time datetime="2012-11-09" class="date-1"><span class="glyphicon glyphicon-calendar"></span> 9.11.2012</time>
+		            <div class="name-author"><span class="glyphicon glyphicon-calendar"></span> <a href="#">Admin</a></div>
+		            <a href="#" class="comments"><span class="glyphicon glyphicon-calendar"></span> 11 comments</a> 
+					<div class="clear"></div>
+					<div class="entry-content">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. …</p>
+						<input type="submit" value="Send message" class="btn btn-1">
+					</div>
+				</div>
+		        </article>
+		<article class="span4">
+		<div class="club_msg">
+       
+        <h1>Meet the team</h1>
+        <!-- Five columns -->
+        <div class="row">
+          <div class="logo_name">
+            <div class="teamalign"> <img class="team-thumb img-circle" src="img/portrait-1.jpg" alt=""> </div>
+            <h3>Andrew</h3>
+            <div class="job-position">web designer</div>
+          </div>
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div >
+            <hr class="featurette-divider">
+            <div class="featurette">
+              <h2 class="featurette-heading"><span class="muted"> a little about us</span></h2>
+              <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
+              <p>At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues.</p>
+              <p>A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.</p>
+            </div>
+            <!-- /.featurette -->
+            <hr class="featurette-divider">
+          </div>
+          <!-- .span10 -->
+        </div>
+        <!-- /.row -->
+      </div>
+		        </article>
+		      </div>
+		     </div>
 
-		<!--<script type="text/javascript" src="js/site.js"></script>-->
-		<!--<script src="js/site.min.js" type="text/javascript" charset="utf-8"></script>-->
-		<!--<script src="js/index.js" type="text/javascript" charset="utf-8"></script>-->
-		<!--<div style="display:none">
-			<script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script>
-		</div>-->
-		<script type="text/javascript">
-			$('.carousel').carousel({
-			  interval: 5000
-			})
-		</script>
-	</body>
+</script>
+	<!--个人中心-->
+	<script type="text/html" id="tpl_personal">
+<div class="personal">
 
+		<div class="row">
+            <div class="col-md-12">
+              <div class="panel">
+              	
+                <div class="tabbable tabs-left clearfix">
+                <div class="logo_name span4">
+		            <div class="teamalign"> <img class="team-thumb img-circle" src="img/portrait-1.jpg" alt=""> </div>
+		            <div class="job-position">web designer</div>
+		            <ul id="myTab1" class="nav nav-tabs">
+	                    <li class="active"><a href="#home3" data-toggle="tab">Home</a></li>
+	                    <li class=""><a href="#profile3" data-toggle="tab">Profile</a></li>
+	                    <li class=""><a href="#myTabDrop3" data-toggle="tab">Dropdown</a></li>
+	                </ul>
+		        </div>	
+                 
+                  <div id="myTabContent" class="tab-content ">
+                    <div class="tab-pane fade active in" id="home3">
+                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile3">
+                      <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.</p>
+                    </div>
+                    <div class="tab-pane fade" id="myTabDrop3">
+                      <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                    
+       </div>
+</div>
+</script>
+	<!--发布活动编辑页面-->
+	<script type="text/html" id="tpl_editor">
+<div class="editor">
+	
+
+<form novalidate="" role="form" class="form-horizontal">
+    <div class="form-group">
+      <label class="col-md-2 control-label">Title</label>
+      <div class="col-md-10">
+        <input type="text" required="" placeholder="Title" id="title" class="form-control" name="title">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-2 control-label">Subject</label>
+      <div class="col-md-10">
+        <input type="text" required="" placeholder="Subject" id="subject" class="form-control" name="title">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="description">Description</label>
+      <div class="col-md-10">
+        <textarea required="" class="form-control" placeholder="Description" rows="10" cols="30" id="description" name="description"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="input-file-now-custom-2">img</label>
+      <div class="col-md-10">
+        <input type="file" id="input-file-now-custom-2" class="dropify" data-height="500" />
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-offset-2 col-md-10">
+        <button class="btn btn-info" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+</script>
+	<script src="dist/js/dropify.js"></script>
+	<!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
+	<!--<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>-->
+	<!--<script src="js/ejs.min.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="js/router.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/router.js" type="text/javascript" charset="utf-8"></script>
 </html>
