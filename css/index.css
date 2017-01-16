@@ -202,7 +202,19 @@
   background-color: #FFFFFF;
   min-height: 500px;
 }
+.image {
+  width: 100%;
+  text-align: center;
+}
+.image > img {
+  width: 100%;
+}
 .editor {
   margin: 50px;
+}
+.editor input[type=text],
+.editor input[type=submit],
+.editor textarea {
+  padding: 1.3em;
 }
 /*# sourceMappingURL=index.css.map */
