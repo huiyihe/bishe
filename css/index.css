@@ -51,6 +51,11 @@
 .btn {
   height: auto;
 }
+.btn-large {
+  height: 60px;
+  line-height: 44px;
+  padding: 0.5em;
+}
 #theme-form input[type=submit] {
   margin-top: 10px;
 }
@@ -62,6 +67,32 @@
 .modal {
   left: 50%;
   bottom: auto;
+  width: 460px;
+}
+.modal .tab-content {
+  padding: 30px 10px 10px;
+}
+.modal input {
+  height: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.modal input[type=submit] {
+  height: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+.modal input[type=submit]:hover {
+  background-color: #CCCCCC;
+  color: #FFFFFF;
+}
+.modal .register_now {
+  padding-right: 20px;
+  cursor: pointer;
+}
+.modal .psd_msg {
+  cursor: pointer;
 }
 .modal-dialog {
   width: auto;
@@ -81,7 +112,7 @@
   border-left: none;
 }
 .nav-tabs.nav-justified > li {
-  width: 30%;
+  width: 50%;
   float: left;
 }
 .nav-tabs > li.active > a,
@@ -137,6 +168,13 @@
 }
 .image > img {
   width: 100%;
+}
+.activity_detail {
+  margin-top: 50px;
+}
+.activity_detail .btn-1 {
+  height: 60px;
+  line-height: 44px;
 }
 .activity_detail .date-1 {
   float: left;
@@ -204,4 +242,15 @@
 }
 .editor {
   margin: 50px;
+}
+.editor input[type=text] {
+  height: 40px;
+  margin-bottom: 0px;
+}
+.editor .btn-info {
+  height: 60px;
+  line-height: 44px;
+  padding: 0.5em;
+  border: none;
+  margin-top: 2em;
 }

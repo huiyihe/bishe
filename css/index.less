@@ -57,6 +57,11 @@
 .btn{
     height: auto;
 }
+.btn-large{
+    height: 60px;
+    line-height: 44px;
+    padding: 0.5em;
+}
 //底部的联系我们
 #theme-form input[type=submit]{
     margin-top: 10px;
@@ -70,6 +75,34 @@
 .modal{
     left: 50%;
     bottom: auto;
+    width: 460px;
+    .tab-content{
+        padding: 30px 10px 10px;
+    }
+    & input{
+       height: 40px;
+       margin-bottom: 20px;
+       text-align: center;
+    }
+    & input[type=submit]{
+       height: 40px;
+       margin-bottom: 20px;
+       text-align: center;
+       width: 100%;
+       &:hover{
+          background-color: #CCCCCC;
+          color: #FFFFFF; 
+       }
+    }
+    & .register_now {
+        padding-right: 20px;
+        cursor: pointer;
+    }
+    & .psd_msg {
+        
+        cursor: pointer;
+    }
+    
 }
 .modal-dialog{
     width: auto;
@@ -89,7 +122,7 @@
  
 }
 .nav-tabs.nav-justified>li{
-    width: 30%;
+    width: 50%;
     float: left;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
@@ -120,6 +153,7 @@
     & .span8{
         padding-right: 30px;
     }
+
     
 }
 #Pagination{
@@ -152,7 +186,12 @@
     }
 }
 .activity_detail{
+    margin-top: 50px;
     //  活动详情
+    & .btn-1{
+        height: 60px;
+        line-height: 44px;
+    }
     & .date-1 {
         float: left;
         border-right: 1px solid #7f7f7f;
@@ -223,7 +262,15 @@
 }
 .editor{
     margin: 50px;
-    & input{
-       
+    & input[type=text]{
+       height: 40px;
+       margin-bottom: 0px;
+    }
+    & .btn-info{
+        height: 60px;
+        line-height: 44px;
+        padding: 0.5em;
+        border:none;
+        margin-top: 2em;
     }
 }

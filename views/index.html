@@ -65,7 +65,7 @@
 				<div class="panel">
 					<ul id="myTab1" class="nav nav-tabs nav-justified">
 						<li class="active">
-							<a href="#home1" data-toggle="tab">login</a>
+							<a href="#login" data-toggle="tab">login</a>
 						</li>
 						<li class="">
 							<a href="#profile1" data-toggle="tab">register</a>
@@ -73,11 +73,24 @@
 
 					</ul>
 					<div id="myTabContent" class="tab-content">
-						<div class="tab-pane fade" id="home1">
-							<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+						<div class="tab-pane fade active in" id="login">
+							<input type="text" required="" placeholder="Name" id="name" class="form-control" name="name">
+							<input type="text" required="" placeholder="Password" id="Password" class="form-control" name="Password">
+							<input type="submit" required="" value="立即登录" id="login_submit" class="form-control" name="login_submit">
+							<!--<a class="register_now">
+								立即注册
+							</a>-->
+							<a class="psd_msg">
+								忘记密码
+							</a>
 						</div>
-						<div class="tab-pane fade active in" id="profile1">
-							<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.</p>
+						<div class="tab-pane fade " id="profile1">
+							<input type="text" required="" placeholder="请输入用户名" id="name" class="form-control" name="name">
+							<input type="text" required="" placeholder="请输入密码" id="Password" class="form-control" name="Password">
+							<input type="text" required="" placeholder="请再次输入密码" id="Password_again" class="form-control" name="Password_again">
+							<input type="text" required="" placeholder="电子邮箱" id="email" class="form-control" name="email">
+							<input type="submit" required="" value="立即注册" id="register_now" class="form-control" name="register_now">
+							
 						</div>
 
 					</div>
@@ -202,9 +215,9 @@
 	<!--发布活动编辑页面-->
 	<link rel="import" href="./editor/editor.html">
 	<script src="dist/js/dropify.js"></script>
-	<!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
-	<!--<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>-->
-	<!--<script src="js/ejs.min.js" type="text/javascript" charset="utf-8"></script>-->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/ejs.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/router.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/router.js" type="text/javascript" charset="utf-8"></script>
 </html>

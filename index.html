@@ -65,7 +65,7 @@
 				<div class="panel">
 					<ul id="myTab1" class="nav nav-tabs nav-justified">
 						<li class="active">
-							<a href="#home1" data-toggle="tab">login</a>
+							<a href="#login" data-toggle="tab">login</a>
 						</li>
 						<li class="">
 							<a href="#profile1" data-toggle="tab">register</a>
@@ -73,11 +73,24 @@
 
 					</ul>
 					<div id="myTabContent" class="tab-content">
-						<div class="tab-pane fade" id="home1">
-							<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+						<div class="tab-pane fade active in" id="login">
+							<input type="text" required="" placeholder="Name" id="name" class="form-control" name="name">
+							<input type="text" required="" placeholder="Password" id="Password" class="form-control" name="Password">
+							<input type="submit" required="" value="立即登录" id="login_submit" class="form-control" name="login_submit">
+							<!--<a class="register_now">
+								立即注册
+							</a>-->
+							<a class="psd_msg">
+								忘记密码
+							</a>
 						</div>
-						<div class="tab-pane fade active in" id="profile1">
-							<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.</p>
+						<div class="tab-pane fade " id="profile1">
+							<input type="text" required="" placeholder="请输入用户名" id="name" class="form-control" name="name">
+							<input type="text" required="" placeholder="请输入密码" id="Password" class="form-control" name="Password">
+							<input type="text" required="" placeholder="请再次输入密码" id="Password_again" class="form-control" name="Password_again">
+							<input type="text" required="" placeholder="电子邮箱" id="email" class="form-control" name="email">
+							<input type="submit" required="" value="立即注册" id="register_now" class="form-control" name="register_now">
+							
 						</div>
 
 					</div>
@@ -443,7 +456,7 @@
 							<h2>A girl running on a road</h2>
 							<div class="entry-content">
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
-								<a href="#" class="more-link">read more</a>
+								<a href="#" class="more-link">More detail</a>
 							</div>
 						</div>
 						<!-- /.inside -->
@@ -455,7 +468,7 @@
 							<h2>A bear sleeping on a tree</h2>
 							<div class="entry-content">
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
-								<a href="#" class="more-link">read more</a>
+								<a href="#" class="more-link">More detail</a>
 							</div>
 						</div>
 						<!-- /.inside -->
@@ -467,7 +480,7 @@
 							<h2>A Panda playing with his baby</h2>
 							<div class="entry-content">
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
-								<a href="#" class="more-link">read more</a>
+								<a href="#" class="more-link">More detail</a>
 							</div>
 						</div>
 						<!-- /.inside -->
@@ -475,7 +488,7 @@
 					<!-- /.span4 -->
 				</div>
 				<!-- /.row -->
-				<a href="#" class="btn btn-large">Go to our blog</a>
+				<a href="#/more_activity" class="btn btn-large">Read more</a>
 			</div>
 			<!-- /.container -->
 		</section>
@@ -508,7 +521,7 @@
 						<h2>A bear sleeping on a tree</h2>
 						<div class="entry-content">
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. …</p>
-							<a href="#" class="more-link">read more</a>
+							<a href="#/activity_detail" class="more-link">read more</a>
 						</div>
 					</div>
 					<!-- /.inside -->
@@ -520,7 +533,7 @@
 						<h2>A Panda playing with his baby</h2>
 						<div class="entry-content">
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. …</p>
-							<a href="#" class="more-link">read more</a>
+							<a href="#/activity_detail" class="more-link">read more</a>
 						</div>
 					</div>
 					<!-- /.inside -->
@@ -557,7 +570,7 @@
 					<div class="clear"></div>
 					<div class="entry-content">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. …</p>
-						<input type="submit" value="Send message" class="btn btn-1">
+						<input type="submit" value="参加活动" class="btn btn-1">
 					</div>
 				</div>
 		        </article>
@@ -647,7 +660,7 @@
     <div class="form-group">
       <label class="col-md-2 control-label">Subject</label>
       <div class="col-md-10">
-        <input type="text" required="" placeholder="Subject" id="subject" class="form-control" name="title">
+        <input type="text" required="" placeholder="Subject" id="subject" class="form-control" name="Subject">
       </div>
     </div>
     <div class="form-group">
@@ -663,7 +676,8 @@
       </div>
     </div>
     <div class="form-group">
-      <div class="col-md-offset-2 col-md-10">
+    	<label class="col-md-2 control-label" for="input-file-now-custom-2"></label>	
+      <div class="col-md-10">
         <button class="btn btn-info" type="submit">Submit</button>
       </div>
     </div>
@@ -671,9 +685,9 @@
 </div>
 </script>
 	<script src="dist/js/dropify.js"></script>
-	<!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
-	<!--<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>-->
-	<!--<script src="js/ejs.min.js" type="text/javascript" charset="utf-8"></script>-->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/ejs.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/router.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/router.js" type="text/javascript" charset="utf-8"></script>
 </html>
