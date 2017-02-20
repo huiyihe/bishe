@@ -257,11 +257,19 @@
     & .tab-content{
         background-color: #FFFFFF;
         min-height: 500px;
-      
-    }
+        
+    }  
+}
+
+.image{  
+    width: 100%;  
+    text-align: center;  
+    &>img{
+        width: 100%;}
 }
 .editor{
     margin: 50px;
+
     & input[type=text]{
        height: 40px;
        margin-bottom: 0px;
@@ -272,5 +280,10 @@
         padding: 0.5em;
         border:none;
         margin-top: 2em;
+
+    & input[type=text], input[type=submit], textarea{
+        padding: 1.3em;
+
     }
 }
+

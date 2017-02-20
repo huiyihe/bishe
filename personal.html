@@ -34,19 +34,72 @@
               <div class="panel">
                 <div class="tabbable tabs-left clearfix">
                   <ul id="myTab1" class="nav nav-tabs">
-                    <li class="active"><a href="#home3" data-toggle="tab">Home</a></li>
-                    <li class=""><a href="#profile3" data-toggle="tab">Profile</a></li>
-                    <li class=""><a href="#myTabDrop3" data-toggle="tab">Dropdown</a></li>
+                    <li class="active"><a href="#home3" data-toggle="tab">个人主页</a></li>
+	                <li class=""><a href="#profile3" data-toggle="tab">已报名活动</a></li>
+	                <li class=""><a href="#myTabDrop3" data-toggle="tab">曾参加活动</a></li>
                   </ul>
                   <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade active in" id="home3">
-                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                      <label class="col-md-2 control-label">姓名</label>
+                      <input type="text" required="" placeholder="姓名" id="name" class="form-control" name="name">
+                      <label class="col-md-2 control-label">学号</label>
+                      <input type="text" required="" placeholder="学号" id="studyId" class="form-control" name="studyId">
+                      <label class="col-md-2 control-label">爱好</label>
+                      <input type="text" required="" placeholder="爱好" id="hobby" class="form-control" name="hobby">
                     </div>
                     <div class="tab-pane fade" id="profile3">
-                      <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.</p>
+                      <div class="bs-example">
+                      <table class="table table-condensed">
+                        <thead>
+                          <tr>
+                            <th>序号</th>
+                            <th>活动名称</th>
+                            <th>活动时间</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>迎新晚会</td>
+                            <td>2016年12月28日19:00-21:00</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>企业参观</td>
+                            <td>2016年11月13日-12月5日</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td colspan="2">社会实践</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                     </div>
                     <div class="tab-pane fade" id="myTabDrop3">
-                      <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...</p>
+                      <div class="bs-example">
+                      <table class="table table-condensed">
+                        <thead>
+                          <tr>
+                            <th>序号</th>
+                            <th>活动名称</th>
+                            <th>活动时间</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>男生节</td>
+                            <td>2016年11月11日</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>女生节</td>
+                            <td>2016年3月7日</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                     </div>
                   </div>
                 </div>
